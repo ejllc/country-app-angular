@@ -5,7 +5,8 @@
 
     <div class="col">
         <!-- Searchbox -->
-        <shared-search-box (onValue)="searchByRegion($event)" placeholder="Buscar por capital">
+        <!-- (onValue)="searchByRegion($event)" -->
+        <shared-search-box (onDebounce)="searchByRegion($event)" placeholder="Buscar por región">
         </shared-search-box>
     </div>
 
