@@ -5,7 +5,7 @@ import { Region } from "./region.type";
 export interface CacheStore {
 
     byCapital: TermCountries;
-    byCountry: TermCountries;
+    byCountries: TermCountries;
     byRegion: RegionCountries;
 }
 

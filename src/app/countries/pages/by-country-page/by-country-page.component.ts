@@ -18,8 +18,8 @@ export class ByCountryPageComponent {
   constructor(private countriesService: CountriesService) { }
 
   ngOnInit(): void {
-    this.initialValue = this.countriesService.cacheStore.byCountry.term;
-    this.countries = this.countriesService.cacheStore.byCountry.countries;
+    this.initialValue = this.countriesService.cacheStore.byCountries.term;
+    this.countries = this.countriesService.cacheStore.byCountries.countries;
   }
 
   searchByCountry(term: string): void {
