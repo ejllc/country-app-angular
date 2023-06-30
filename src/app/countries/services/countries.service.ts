@@ -21,10 +21,7 @@ export class CountriesService {
         map(countries => countries.length > 0 ? countries[0] : null),
         catchError(() => of(null))
       );
-
-
   }
-
 
   searchCapital(term: string): Observable<Country[]> {
 
